@@ -23,7 +23,7 @@ body {
   z-index: 20;
 }
 
-#background {
+#bckgrnd_div {
   position: fixed;
   top: -10vh;
   left: -100vw;
