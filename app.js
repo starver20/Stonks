@@ -32,7 +32,7 @@ const calculate = () => {
     let profit = (priceDiff * qty).toFixed(2);
     let profitPercent = ((profit / initialPrice) * 100).toFixed(2);
     setMsg(
-      `Yay!! You made a profit of ${profit} with profit percentage of ${profitPercent} `
+      `Yay!! You made a profit of ${profit} with profit percentage of ${profitPercent}% `
     );
 
     backgroundEl.style.backgroundColor = '#00B300';
@@ -41,7 +41,7 @@ const calculate = () => {
     let loss = (Math.abs(priceDiff) * qty).toFixed(2);
     let lossPercent = ((loss / initialPrice) * 100).toFixed(2);
     setMsg(
-      `Oops!! You made a loss of ${loss} with loss percentage of ${lossPercent} `
+      `Oops!! You made a loss of ${loss} with loss percentage of ${lossPercent}% `
     );
     backgroundEl.style.backgroundColor = '#F60000';
   }
