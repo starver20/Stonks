@@ -30,7 +30,7 @@ const calculate = () => {
   } else if (priceDiff > 0) {
     //profit
     let profit = (priceDiff * qty).toFixed(2);
-    let profitPercent = ((profit / initialPrice) * 100).toFixed(2);
+    let profitPercent = ((priceDiff / initialPrice) * 100).toFixed(2);
     setMsg(
       `Yay!! You made a profit of ${profit} with profit percentage of ${profitPercent}% `
     );
