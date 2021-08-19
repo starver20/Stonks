@@ -39,7 +39,7 @@ const calculate = () => {
   } else {
     //loss
     let loss = (Math.abs(priceDiff) * qty).toFixed(2);
-    let lossPercent = ((loss / initialPrice) * 100).toFixed(2);
+    let lossPercent = Math.abs(((priceDiff / initialPrice) * 100).toFixed(2));
     setMsg(
       `Oops!! You made a loss of ${loss} with loss percentage of ${lossPercent}% `
     );
